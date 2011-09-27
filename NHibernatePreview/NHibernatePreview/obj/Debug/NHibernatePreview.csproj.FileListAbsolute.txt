@@ -1,0 +1,16 @@
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\NHibernatePreview.dll.config
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\NHibernatePreview.dll
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\NHibernatePreview.pdb
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\Castle.Core.dll
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\FluentNHibernate.dll
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\HibernatingRhinos.Profiler.Appender.v4.0.dll
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\Iesi.Collections.dll
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\NHibernate.dll
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\xunit.dll
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\Castle.Core.xml
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\NHibernate.ByteCode.Castle.xml
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\bin\Debug\xunit.xml
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\obj\Debug\ResolveAssemblyReference.cache
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\obj\Debug\NHibernatePreview.dll
+C:\TestApps\NHibernatePreview\NHibernatePreview\NHibernatePreview\obj\Debug\NHibernatePreview.pdb

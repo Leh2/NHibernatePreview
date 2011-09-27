@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license id="3ee49a39-c12d-4ec6-9e2b-56fc16ad2184" expiration="2011-10-26T08:02:42.3348210" type="Trial" prof="NHProf">
+  <name>Preview</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>d4Q0hFecxBxbXC8o5M1Vqm9hJ4Q=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>CCbkEp2LTHvSE+y3QLbpddZxqZsF7uT7S1n2by58Tvl/I2isbqzHgmAG1HcKGKpyvP4ObMXjnTFfBSDIIIwLEAlRglq2UGCYtjOJ5hG4TgUOGO97pc2jWY5dNvxGC8hgTGVEMmSukzCQFebr5X3NbOx0x3DKl3XxT1koudcd5uI=</SignatureValue>
+  </Signature>
+</license>

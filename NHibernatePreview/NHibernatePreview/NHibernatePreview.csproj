@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B88BF5E-6179-4327-A072-3DC290D31F8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NHibernatePreview</RootNamespace>
+    <AssemblyName>NHibernatePreview</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\Libraries\NHibernate\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\Libraries\NHibernate\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="HibernatingRhinos.Profiler.Appender.v4.0">
+      <HintPath>..\Tools\NHibernateProfiler\HibernatingRhinos.Profiler.Appender.v4.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Libraries\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\Libraries\NHibernate\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xunit">
+      <HintPath>..\Tools\xUnit.net\xunit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="DomainModel\Components\Address.cs" />
+    <Compile Include="DomainModel\CustomerBaseWithTablePerHierarchyInheritance.cs" />
+    <Compile Include="DomainModel\CustomerBaseWithTablePerSubclassInheritance.cs" />
+    <Compile Include="DomainModel\CustomerWithAddress.cs" />
+    <Compile Include="DomainModel\CustomerWithGuid.cs" />
+    <Compile Include="DomainModel\CustomerWithHbmMapping.cs" />
+    <Compile Include="DomainModel\CustomerWithHilo.cs" />
+    <Compile Include="DomainModel\CustomerWithOneToMany.cs" />
+    <Compile Include="DomainModel\CustomerWithOptimisticConcurrency.cs" />
+    <Compile Include="DomainModel\CustomerWithVersion.cs" />
+    <Compile Include="DomainModel\RoleWithManyToMany.cs" />
+    <Compile Include="DomainModel\UserWithManyToMany.cs" />
+    <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Mappings\CustomerBaseWithTablePerSubclassInheritanceMapping.cs" />
+    <Compile Include="Mappings\CustomerWithOneToManyMapping.cs" />
+    <Compile Include="Mappings\CustomerBaseWithTablePerHierarchyInheritanceMapping.cs" />
+    <Compile Include="Mappings\Overrides\CustomerWithAddressOverrrides.cs" />
+    <Compile Include="Mappings\Overrides\CustomerWithGuidOverrrides.cs" />
+    <Compile Include="Mappings\Overrides\CustomerWithHiloOverrrides.cs" />
+    <Compile Include="Mappings\Overrides\CustomerWithOptimisticConcurrencyOverrrides.cs" />
+    <Compile Include="Mappings\Overrides\CustomerWithVersionOverrrides.cs" />
+    <Compile Include="Mappings\Overrides\UserWithManyToManyOverrrides.cs" />
+    <Compile Include="NHibernateBase.cs" />
+    <Compile Include="NHibernateTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NHibernateConfiguration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NHibernateMapping.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DomainModel\CustomerWithHbmMapping.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
